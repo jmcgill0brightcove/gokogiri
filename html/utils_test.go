@@ -2,7 +2,7 @@ package html
 
 import (
 	"fmt"
-	"github.com/jmcgill0brigthcove/gokogiri/help"
+	"github.com/jmcgill0brightcove/gokogiri/help"
 	"io/ioutil"
 	"path/filepath"
 	"strings"

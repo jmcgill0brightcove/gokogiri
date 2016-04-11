@@ -1,7 +1,7 @@
 package gokogiri
 
 import (
-	"github.com/jmcgill0brigthcove/gokogiri/help"
+	"github.com/jmcgill0brightcove/gokogiri/help"
 	"testing"
 )
 

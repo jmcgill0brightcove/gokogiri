@@ -9,9 +9,9 @@ import "C"
 
 import (
 	"errors"
-	"github.com/jmcgill0brigthcove/gokogiri/help"
-	. "github.com/jmcgill0brigthcove/gokogiri/util"
-	"github.com/jmcgill0brigthcove/gokogiri/xpath"
+	"github.com/jmcgill0brightcove/gokogiri/help"
+	. "github.com/jmcgill0brightcove/gokogiri/util"
+	"github.com/jmcgill0brightcove/gokogiri/xpath"
 	"os"
 	"unsafe"
 )

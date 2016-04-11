@@ -16,12 +16,12 @@ This is a major rewrite from v0 in the following places:
 To install:
 
 - sudo apt-get install libxml2-dev
-- go get github.com/jmcgill0brigthcove/gokogiri
+- go get github.com/jmcgill0brightcove/gokogiri
 
 To run test:
 
-- go test github.com/jmcgill0brigthcove/gokogiri/html
-- go test github.com/jmcgill0brigthcove/gokogiri/xml
+- go test github.com/jmcgill0brightcove/gokogiri/html
+- go test github.com/jmcgill0brightcove/gokogiri/xml
 
 Basic example:
 
@@ -30,7 +30,7 @@ Basic example:
     import (
       "net/http"
       "io/ioutil"
-      "github.com/jmcgill0brigthcove/gokogiri"
+      "github.com/jmcgill0brightcove/gokogiri"
     )
 
     func main() {

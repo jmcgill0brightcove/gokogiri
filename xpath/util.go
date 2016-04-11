@@ -17,7 +17,7 @@ import (
 	"unsafe"
 )
 import "reflect"
-import . "github.com/jmcgill0brigthcove/gokogiri/util"
+import . "github.com/jmcgill0brightcove/gokogiri/util"
 
 var (
 	contextMap   = make(map[unsafe.Pointer]VariableScope)

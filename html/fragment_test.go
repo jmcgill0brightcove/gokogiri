@@ -109,12 +109,12 @@ func TestAddFragmentWithNamespace(t *testing.T) {
 		println(err.Error())
 	}
 	defer doc.Free()
-	docFragment, err := doc.ParseFragment([]byte("<div xmlns='http://www.jmcgill0brigthcove.com' class='cool'><h1>"), nil, DefaultParseOption)
+	docFragment, err := doc.ParseFragment([]byte("<div xmlns='http://www.jmcgill0brightcove.com' class='cool'><h1>"), nil, DefaultParseOption)
 	if err != nil {
 		t.Error(err.Error())
 		return
 	}
-	if docFragment.String() != `<div xmlns="http://www.jmcgill0brigthcove.com" class="cool"><h1></h1></div>` {
+	if docFragment.String() != `<div xmlns="http://www.jmcgill0brightcove.com" class="cool"><h1></h1></div>` {
 		t.Errorf("doc fragment does not match\n")
 	}
 	doc2, err := Parse([]byte("<div class='not so cool'></div>"), DefaultEncodingBytes, nil, DefaultParseOption, DefaultEncodingBytes)
@@ -128,7 +128,7 @@ func TestAddFragmentWithNamespace(t *testing.T) {
 	if doc2.String() != `<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html><body>
 <div class="not so cool"></div>
-<div xmlns="http://www.jmcgill0brigthcove.com" class="cool"><h1></h1></div>
+<div xmlns="http://www.jmcgill0brightcove.com" class="cool"><h1></h1></div>
 </body></html>
 ` 	{
 		t.Errorf("document does not match after adding a fragment with namespace\n")

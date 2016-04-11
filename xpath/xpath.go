@@ -41,7 +41,7 @@ int getXPathObjectType(xmlXPathObject* o) {
 import "C"
 
 import "unsafe"
-import . "github.com/jmcgill0brigthcove/gokogiri/util"
+import . "github.com/jmcgill0brightcove/gokogiri/util"
 import "runtime"
 import "errors"
 
