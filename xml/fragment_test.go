@@ -54,7 +54,7 @@ func TestParseDocumentFragment(t *testing.T) {
 func TestSearchDocumentFragment(t *testing.T) {
 	defer CheckXmlMemoryLeaks(t)
 
-	doc, err := Parse([]byte("<jmcgill0brightcove><z/><s/></moovweb>"), DefaultEncodingBytes, nil, DefaultParseOption, DefaultEncodingBytes)
+	doc, err := Parse([]byte("<jmcgill0brightcove><z/><s/></jmcgill0brightcove>"), DefaultEncodingBytes, nil, DefaultParseOption, DefaultEncodingBytes)
 	if err != nil {
 		t.Error("parsing error:", err.Error())
 		return
